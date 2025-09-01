@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AlertAI — Community Safety MVP</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+  <header>
+    <h1>AlertAI — Report & View Incidents</h1>
+    <p class="tagline">Simple MVP for reporting drug & theft incidents in Nakuru</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Submit a Report</h2>
+      <form id="reportForm">
+        <label>
+          Category
+          <select id="category" required>
+            <option value="">Select…</option>
+            <option>Drug Abuse</option>
+            <option>Petty Theft</option>
+            <option>Vandalism</option>
+            <option>Violence</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>
+          Description
+          <textarea id="description" rows="3" placeholder="What happened?" required></textarea>
+        </label>
+
+        <div class="grid2">
+          <label>
+            Latitude
+            <input id="lat" type="number" step="any" placeholder="-0.303..." required/>
+          </label>
+          <label>
+            Longitude
+            <input id="lng" type="number" step="any" placeholder="36.08..." required/>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="useLocation">Use My Location</button>
+          <button type="submit" class="primary">Submit Report</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Map (Reports)</h2>
+      <div id="map"></div>
+    </section>
+
+    <section class="card">
+      <h2>Recent Reports</h2>
+      <ul id="reportList"></ul>
+    </section>
+
+    <section class="card donate">
+      <h2>Support the Project</h2>
+      <p>This MVP is community-funded. You can support via the button below.</p>
+      <a id="donateBtn" href="#" target="_blank">Donate / Sponsor</a>
+      <small>Tip: Replace this with your M‑Pesa/PayPal/Flutterwave payment link.</small>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for Vibe Coding 3.0 — SDGs 3 • 4 • 2</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+</html>

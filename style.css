@@ -1,0 +1,19 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:#f5f7fb;color:#0f172a}
+header{padding:24px 16px;background:#0ea5e9;color:#fff;text-align:center}
+header .tagline{opacity:.9;margin:4px 0 0}
+.container{max-width:1000px;margin:20px auto;padding:0 16px;display:grid;grid-template-columns:1fr;gap:16px}
+.card{background:#fff;border-radius:16px;box-shadow:0 8px 24px rgba(2,6,23,.06);padding:16px}
+h1,h2{margin:0 0 12px}
+label{display:block;margin:8px 0}
+input,select,textarea{width:100%;padding:10px;border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc}
+.actions{display:flex;gap:8px;margin-top:8px}
+button,.primary,a#donateBtn{padding:10px 14px;border-radius:12px;border:0;cursor:pointer;text-decoration:none;display:inline-block}
+button{background:#e2e8f0}
+.primary{background:#0ea5e9;color:#fff}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#map{height:380px;border-radius:12px;overflow:hidden}
+#reportList{list-style:none;padding:0;margin:0}
+#reportList li{padding:10px;border:1px solid #e2e8f0;border-radius:12px;margin-bottom:8px}
+footer{padding:24px;text-align:center;color:#475569}
+.card.donate{display:flex;flex-direction:column;gap:8px}
+@media (min-width:880px){.container{grid-template-columns:1fr 1fr}.container .card:nth-child(2){grid-column:span 2}}
