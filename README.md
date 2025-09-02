@@ -1,4 +1,4 @@
-# Smart-Youth-Hub-AlertAI
+      Smart-Youth-Hub-AlertAI
 AlertAI-MVP
 AlertAI-MVP is a full-stack web application that combines real-time alerts, interactive mapping, and AI-powered notifications. It is built with React (frontend), Node.js/Express (backend), and MongoDB (database). The project includes user authentication, interactive maps, and a scalable deployment setup using Vercel (frontend) and Railway (backend).
 
