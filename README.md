@@ -2,7 +2,7 @@
 AlertAI-MVP
 AlertAI-MVP is a full-stack web application that combines real-time alerts, interactive mapping, and AI-powered notifications. It is built with React (frontend), Node.js/Express (backend), and MongoDB (database). The project includes user authentication, interactive maps, and a scalable deployment setup using Vercel (frontend) and Railway (backend).
 
-Features
+Features; 
 User Authentication: Secure login and registration using JWT.
 
 Interactive Map: Visualize alerts with geolocation data.
